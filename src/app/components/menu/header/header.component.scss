@@ -1,0 +1,23 @@
+.navbar .nav-item a::after {
+  width: 0px;
+  position: absolute;
+  display: block;
+  content: "";
+  height: 2px;
+  margin: 0 auto;
+  background-color: #2eca7f;
+}
+
+.navbar .nav-item a:hover:after {
+  animation: menu-underline 0.25s;
+  display: block;
+  animation-fill-mode: forwards;
+}
+
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.5rem;
+}

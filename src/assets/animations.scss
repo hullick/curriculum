@@ -1,0 +1,18 @@
+@keyframes menu-underline {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 20px;
+  }
+}
+
+@keyframes navbar-sticky {
+  from {
+    height: 1.5rem;
+  }
+  to {
+    height: .5rem;
+    // background-color: red !important;
+  }
+}

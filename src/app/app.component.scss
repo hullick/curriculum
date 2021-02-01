@@ -1,0 +1,12 @@
+@import "../assets/animations.scss";
+@import "../assets/utilities.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  font-family: roboto, Helvetica, sans-serif !important;
+}
+
+body, app-header{
+  overflow: unset;
+}
