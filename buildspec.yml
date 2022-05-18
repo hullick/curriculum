@@ -1,12 +1,14 @@
 phases:
   install:
+    commands:
+    - curl -sS https://dl.yarnpkg.com/debian/ | apt-key add -
+    - node --version
+    - npm config set registry https://registry.npmjs.org/
+    - npm config set @empresateste:registry https://artifactoryempresacom/artifactory/api/npm/npm-platforms-engineering
+    - npm config set //artifactoryempresacom/artifactory/api/npm/npm-platforms-engineering/:_auth
+      $NPM_AUTH_TOKEN
+    - npm config set always-auth true
+    - npm install
+    - npm --version
     runtime-versions:
       nodejs: 14
-    commands:
-      - curl -sS https://dl.yarnpkg.com/debian/ | apt-key add -
-      - node --version
-      - npm config set registry https://registry.npmjs.org/
-      - npm config set @empresateste:registry https://npm.platforms.engineering
-      - npm config set //npm.platforms.engineering/:_authToken $NPM_AUTH_TOKEN
-      - npm install
-      - npm --version
